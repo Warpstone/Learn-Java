@@ -12,14 +12,21 @@ public class Solution {
     	int number3 = scanner.nextInt();
     	
     	if (number1 == number2) { // Сначала мы проверяем условие, если все 3 числа раны между собой, то выводим на экран все три числа
-    		if (number1 == number3) {
+    		if (number1 == number3) 
+    		{
     			System.out.println(number1 + " " + number2 + " " + number3);
-    		} else {
+    		} 
+    		else 
+    		{
     			System.out.println(number1 + " " + number2); // Иначе (все три числа не равны) выводи равные пары чисел
     		}
-    	} else if (number1 == number3) {
+    	} 
+    	else if (number1 == number3) 
+    	{
     		System.out.println(number1 + " " + number3);
-    	} else if (number2 == number3) {
+    	}
+    	else if (number2 == number3) 
+    	{
     		System.out.println(number2 + " " + number3);
     	}
     }
