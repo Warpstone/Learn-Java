@@ -9,25 +9,21 @@
 public class Solution_19 {
 
 	public static void main(String[] args) {
-		int n = 0;
-		while (n < 10) {
-			int m = 0;
-			while (m < 20) {
-				System.out.print("Б ");
-				m++;
-				while (m == 1) {
-					System.out.print("Б " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " " + " ");
-					m++;
-					while (m == 19) {
-						System.out.print("Б");
-						m++;
-					}
+		int Height = 10;                          // Ширина
+		int Widht = 20;                          // Высота
+		int counter = 1;                        // Счетчик внешнего цикла
+		while (counter <= Height) {
+			int col = 1;                       // Счетчик внутреннего цикла
+			while (col <= Widht) {
+				if (counter == 1 || counter == Height || col == 1 || col == Widht) { // Проверяем: это граница? (row 1 ИЛИ row 10 ИЛИ col 1 ИЛИ col 20)
+					System.out.print("Б");                                   		// Да, печатаем символ
+				} else {
+					System.out.print(" "); 											// Нет, печатаем пробел
 				}
-			}
-			System.out.println();
-			n++;
+				  col++;
+				}
+			System.out.println("");          // После завершения внутреннего цикла (напечатали всю строку)
+			counter++;
 		}
-
+	  }
 	}
-
-}
