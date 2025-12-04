@@ -16,12 +16,20 @@ import java.util.Scanner;
 public class Solution_23 {
     public static void main(String[] args) {
     	Scanner console = new Scanner (System.in);
-        int min = 0;
+        int min = 10;
+        boolean numb = false;
+        
         while (console.hasNextInt()) {
             int x = console.nextInt();
-            if (x < min)
+            if (x < min) {
             	min = x;
                 }
-            System.out.println(min);
+        		numb = true;
+    		 }
+    		if (!numb) {
+    			System.out.println(min);
+            } else {
+            	System.out.println(min);
             }
         }
+	}
