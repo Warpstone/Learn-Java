@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Solution_23 {
     public static void main(String[] args) {
     	Scanner console = new Scanner (System.in);
-        int min = 10;
+        int min = 2147483647;
         boolean numb = false;
         
         while (console.hasNextInt()) {
