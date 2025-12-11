@@ -19,11 +19,11 @@ public class Solution_32 {
         int multiple = console.nextInt();
         
         int sum = 0;
-        for (int i = start; i < end; i++) {
-        	if (i % multiple !=0) {
-        		continue;
+        for (int i = start; i < end; i++) { // Цикл начинается со значения start и продолжается, пока i меньше end. Это гарантирует, что end не включается в сумму.
+        	if (i % multiple !=0) {			// Оператор % (остаток от деления) используется для проверки кратности. Если остаток не равен нулю, значит, i не кратно multiple.
+        		continue;					// Если условие в if истинно (т.е. число не кратно), continue немедленно завершает текущую итерацию цикла for и переходит к следующему значению i.
         	}
-        	sum += i;
+        	sum += i;         // Эта строка выполняется только в том случае, если число кратно multiple (т.е. если continue не был вызван).
         }
         System.out.println(sum);
 	}
