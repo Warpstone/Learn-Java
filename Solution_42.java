@@ -3,11 +3,11 @@
  */
 public class Solution_42 {
     static void main() {
-        for (int i = 0; i < 10; i++) {
-            int startCount = 10 - i;
-            for (int j= 0; j < startCount; j++)
-                System.out.print("*");
-                System.out.println();
+        for (int i = 0; i < 10; i++) {                       // Цикл по строкам (всего должно быть 10 строк).
+            int startCount = 10 - i;                         // Вычисляем, сколько в строке должно быть звездочек.
+            for (int j= 0; j < startCount; j++)              // Цикл по звездочкам.
+                System.out.print("*");                       // (выводим starCount звездочек)
+                System.out.println();                        // Добавляем перенос курсора на следующую строку, чтобы строки не слиплись.
         }
 
     }
