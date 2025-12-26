@@ -1,7 +1,7 @@
 public class ChristmasTree {
 	static void main() {
 
-		int height = 9;                                             // Высота елки;
+		int height = 8;                                             // Высота елки;
 
 		for  (int i = 0; i < height; i++) {                         // Внешний цикл — отвечает за каждый уровень ёлки (строку);
 			for (int j = 0; j < height - i - 1; j++) {              // Печатаем пробелы слева;
