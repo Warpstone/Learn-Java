@@ -1,14 +1,14 @@
 /*
 	Проверка простого числа. Проверяем, если 11 простое число;
- */
+*/
 
 public class Prime_number_check {
 	static void main() {
-		int n = 11, count = 0;
-		for (int i = 1; i <= n; i++) {
-			if (n % i == 0) count++;
+		int n = 11, count = 0;                  // Count проверяет сколько делителей у n;
+		for (int i = 1; i <= n; i++) {          // Цикл перебирает все числа от 1 до 11;
+			if (n % i == 0) count++;            // Если число n делится на i нацело (остаток 0) → значит i — делитель числа n;
 		}
-		System.out.println(count == 2);
+		System.out.println(count == 2);         // Если делителей получилось ровно 2, печатаем true. В другом случае false;
 
 	}
 }
