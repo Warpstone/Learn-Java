@@ -1,11 +1,14 @@
+/*
+	Подсчет гласных в строке;
+ */
 public class Count_Vowels_in_a_String {
 	static void main() {
 
-		String ass = "Hello";
-		int count = 0;
-		for (char c : ass.toCharArray()) {
-			if("aeiou".contains(c + "")) count++;
-		}
-		System.out.println(count);
+		String ass = "Hello";                                   // Создается строковая переменая в которой мы будем искать гласные;
+		int count = 0;                                          // Инициализируется счетчик;
+		for (char c : ass.toCharArray()) {                      // Метод .toCharArray превращает строку в массив символов;
+			if("aeiou".contains(c + "")) count++;               // "aeiou" строка-эталон, содержащая все англ. гласные в нижнем регистре;
+		}                                                     //с + "" - Это хак для преобразования типа char в тип String; Метод .contains() в java работает только со строками; Поэтому "приклеивается" пустая строка к символу!;
+		System.out.println(count);                      // Суть программы - Входит ли текущий символ "H" в строку "aeiou"? и так далее;
 	}
 }
